@@ -1,1 +1,23 @@
 # BackendChai
+
+Sever means a software wich is serve
+
+Nodejs -->JS
+ORM,ODM,
+
+mysql,mongodbDB
+
+
+index.js ---> DB connection
+app.js   ---> configurations 
+constants --> enums ,DBname  
+DB
+Models
+Controllers
+Routes
+Middlewares
+Utils
+(extra dependencies )
+
+package.json
+.env
