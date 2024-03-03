@@ -2,7 +2,10 @@
 
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const dotenv = require('dotenv');
+
+dotenv.config()
+const PORT = process.env.PORT; 
 
 app.listen(PORT,()=>{
     console.log(`Server list-en on port number : ${PORT} `)
