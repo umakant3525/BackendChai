@@ -33,3 +33,4 @@ api-----> / home , /login
 
 
 deployement --> heroku digitalocean railway seenode render cyclic
+done with deployement 
