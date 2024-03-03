@@ -30,3 +30,6 @@ frontend ---------------------> Backend
 
 request ----> get , post,put  
 api-----> / home , /login 
+
+
+deployement --> heroku digitalocean railway seenode render cyclic
