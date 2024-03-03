@@ -21,3 +21,12 @@ Utils
 
 package.json
 .env
+
+
+2nd video 
+
+
+frontend ---------------------> Backend 
+
+request ----> get , post,put  
+api-----> / home , /login 
