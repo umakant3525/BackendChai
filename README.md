@@ -40,11 +40,4 @@ cors - cross platform orgin
 proxy in package.json
 backend 
 frontend make 2 folders 
-
-4tth video 
-
-final mega project in build all 
-
-5th video
-
-enter deep ito backend 
+bad practice of dist folder in the  project of express 
