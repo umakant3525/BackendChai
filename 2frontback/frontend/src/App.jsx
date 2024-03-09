@@ -1,35 +1,41 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React, { useEffect, useState } from 'react';
+import './App.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+const App = () => {
+  const [jokes, setJokes] = useState([]);
+
+  useEffect(() => {
+    const fetchJokes = async () => {
+      try {
+        const response = await fetch('/api/jokes');
+        if (!response.ok) {
+          throw new Error('Failed to fetch jokes');
+        }
+        const data = await response.json();
+        setJokes(data);
+      } catch (error) {
+        console.error('Error fetching jokes:', error);
+      }
+    };
+
+    fetchJokes();
+  }, []); // Empty dependency array to run effect only once on mount
 
   return (
-    <>
+    <div>
+      <h1>Jokes</h1>
+      <hr />
+      <div>JOKES Number: {jokes.length}</div>
       <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+        {jokes.map(joke => (
+          <div key={joke.id}>
+            <h2>{joke.title}</h2>
+            <p>{joke.content}</p>
+          </div>
+        ))}
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    </div>
+  );
+};
 
-export default App
+export default App;
