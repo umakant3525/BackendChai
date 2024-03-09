@@ -37,7 +37,9 @@ done with deployement
 
 3rd production deployment 
 cors - cross platform orgin 
-proxy in package.json
+proxy in vite config js 
 backend 
 frontend make 2 folders 
 bad practice of dist folder in the  project of express 
+
+4th video 
