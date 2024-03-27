@@ -24,7 +24,7 @@ package.json
 .env
 
 
-2nd video 
+extra video 
 
 frontend ---------------------> Backend 
 
@@ -35,14 +35,26 @@ api-----> / home , /login
 deployement --> heroku digitalocean railway seenode render cyclic
 done with deployement 
 
-3rd production deployment 
+2nd  production deployment 
 cors - cross platform orgin 
 proxy in vite config js 
 backend 
 frontend make 2 folders 
 bad practice of dist folder in the  project of express 
 
-4th video 
+3rd video 
 backend project explanation --- like youtube app + integrated twitter -- this is large backend prject with mutile user with aggrigation pipeline and all 
 
 videos photo tweet , like dislike , assignment + mega project 
+
+4th video -- Data modelling 
+
+Data kya store karane vale hai ye important hai ? not tech stack 
+Moon modelar, eraser .io  -- data modeling
+moongose -- eligent dat modelig  for nodejs
+Prisma -- for sql data modeling 
+
+5th data modeling 
+
+Ecommerce & hospital managemant 
+
