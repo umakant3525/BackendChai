@@ -43,3 +43,6 @@ frontend make 2 folders
 bad practice of dist folder in the  project of express 
 
 4th video 
+backend project explanation --- like youtube app + integrated twitter -- this is large backend prject with mutile user with aggrigation pipeline and all 
+
+videos photo tweet , like dislike , assignment + mega project 
