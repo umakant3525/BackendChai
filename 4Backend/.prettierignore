@@ -1,0 +1,23 @@
+# Ignore environment variable file
+.env
+.env.*
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+logs/
+*.log
+
+# Ignore generated files
+dist/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore editor-specific files
+.vscode/
+*.swp
+*.swo
+*.swn
+*.tmp
