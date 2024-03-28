@@ -57,4 +57,10 @@ Prisma -- for sql data modeling
 5th data modeling 
 
 Ecommerce & hospital managemant 
+Basic of done 
+
+--------------------------------------------------
+
+Here we make backend app for the professional backend project 
+6th  setup of professional backend  
 
