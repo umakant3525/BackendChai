@@ -68,5 +68,6 @@ Here we make backend app for the professional backend project
 
 8th -- custom api response and error handling 
 
+9th  -- model with hooks and jwt 
 
 
