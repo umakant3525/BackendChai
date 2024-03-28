@@ -72,4 +72,9 @@ Here we make backend app for the professional backend project
 
 10th -- file upload with third party or same  server  multer 
 
+11th -- multer file upload
+
+12th -- crash http theory
+
+13th -- router and controllers 
 
