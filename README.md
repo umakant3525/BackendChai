@@ -64,3 +64,9 @@ Basic of done
 Here we make backend app for the professional backend project 
 6th  setup of professional backend  
 
+7th -- connect db 
+
+8th -- custom api response and error handling 
+
+
+
