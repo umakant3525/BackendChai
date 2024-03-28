@@ -70,4 +70,6 @@ Here we make backend app for the professional backend project
 
 9th  -- model with hooks and jwt 
 
+10th -- file upload with third party or same  server  multer 
+
 
