@@ -26,6 +26,4 @@ app.get("/api", (req,res,next) => {
 
 app.use("/api/v1/users", userRouter)
 
-
-
 export { app }
