@@ -60,4 +60,20 @@ const registerUser = asyncHandler(async (req, res) => {
     );
 });
 
-export { registerUser };
+const loginUser = asyncHandler( async (req, res) => {
+    const {email, username, password} = req.body ;
+
+    if(!username || !email){
+        throw new  ApiError(400,"Username or Email field cannot be empty");
+    }
+
+    const  user = await User.findOne({$or:[{username}, {email}]})
+
+    if(!user) {
+        throw new ApiError(404,"user not exist")
+    }
+
+
+}
+)
+export { registerUser , loginUser};
