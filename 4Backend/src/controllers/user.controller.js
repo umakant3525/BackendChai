@@ -76,57 +76,55 @@ const registerUser = asyncHandler(async (req, res) => {
     );
 });
 
-   
-    
-    const loginUser = asyncHandler(async (req, res) => {
-         // req body --> data
-    //  username or email
-    // find the user
-    //  password check
-    //  access and refresh token 
-    // send cookie  with response
+const loginUser = asyncHandler(async (req, res) => {
+    // req body --> data
+//  username or email
+// find the user
+//  password check
+//  access and refresh token 
+// send cookie  with response
 
-        const { email, username, password } = req.body;
-    
-        if (!username && !email) {
-            throw new ApiError(400, "Username or Email field cannot be empty");
-        }
-    
-        const user = await User.findOne({ $or: [{ username }, { email }] });
-    
-        if (!user) {
-            throw new ApiError(404, "User not found");
-        }
-    
-        const isPasswordValid = await user.isPasswordCorrect(password);
-    
-        if (!isPasswordValid) {
-            throw new ApiError(401, "Invalid user credentials");
-        }
-    
-        const { accessToken, refreshToken } = await generateAccessAndRefreshToken(user._id);
-    
-        const loggedInUser = await User.findById(user._id).select("-password -refreshToken");
-    
-        const cookieOptions = {
-            httpOnly: true,
-            secure: true,
-            sameSite: 'strict'
-        };
-    
-        return res.status(200)
-            .cookie('accessToken', accessToken, cookieOptions)
-            .cookie('refreshToken', refreshToken, cookieOptions)
-            .json(new ApiResponse(
-                200,
-                {
-                    user: loggedInUser,
-                    accessToken,
-                    refreshToken
-                },
-                "User logged in successfully"
-            ));
-    });
+   const { email, username, password } = req.body;
+
+   if (!username && !email) {
+       throw new ApiError(400, "Username or Email field cannot be empty");
+   }
+
+   const user = await User.findOne({ $or: [{ username }, { email }] });
+
+   if (!user) {
+       throw new ApiError(404, "User not found");
+   }
+
+   const isPasswordValid = await user.isPasswordCorrect(password);
+
+   if (!isPasswordValid) {
+       throw new ApiError(401, "Invalid user credentials");
+   }
+
+   const { accessToken, refreshToken } = await generateAccessAndRefreshToken(user._id);
+
+   const loggedInUser = await User.findById(user._id).select("-password -refreshToken");
+
+   const cookieOptions = {
+       httpOnly: true,
+       secure: true,
+       sameSite: 'strict'
+   };
+
+   return res.status(200)
+       .cookie('accessToken', accessToken, cookieOptions)
+       .cookie('refreshToken', refreshToken, cookieOptions)
+       .json(new ApiResponse(
+           200,
+           {
+               user: loggedInUser,
+               accessToken,
+               refreshToken
+           },
+           "User logged in successfully"
+       ));
+});
 
 
 const logoutUser = asyncHandler( async (req, res) => {
@@ -198,6 +196,8 @@ const refreshAccessToken = asyncHandler(async (req, res) => {
     }
 
 });
+
+//  testing remain  
 
 const changeCurrentPassword = asyncHandler(async(req, res) => {
     const {oldPassword, newPassword} = req.body
