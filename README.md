@@ -1,6 +1,6 @@
 # BackendChai
 
-1st video 
+1st video
 Sever means a software wich is serve
 
 Nodejs -->JS
@@ -8,9 +8,8 @@ ORM,ODM,
 
 mysql,mongodbDB
 
-
 index.js ---> DB connection
-app.js   ---> configurations 
+app.js ---> configurations
 constants --> enums ,DBname  
 DB
 Models
@@ -23,71 +22,83 @@ Utils
 package.json
 .env
 
+extra video
 
-extra video 
-
-frontend ---------------------> Backend 
+frontend ---------------------> Backend
 
 request ----> get , post,put  
-api-----> / home , /login 
-
+api-----> / home , /login
 
 deployement --> heroku digitalocean railway seenode render cyclic
-done with deployement 
+done with deployement
 
-2nd  production deployment 
-cors - cross platform orgin 
-proxy in vite config js 
-backend 
-frontend make 2 folders 
-bad practice of dist folder in the  project of express 
+2nd production deployment
+cors - cross platform orgin
+proxy in vite config js
+backend
+frontend make 2 folders
+bad practice of dist folder in the project of express
 
-3rd video 
-backend project explanation --- like youtube app + integrated twitter -- this is large backend prject with mutile user with aggrigation pipeline and all 
+3rd video
+backend project explanation --- like youtube app + integrated twitter -- this is large backend prject with mutile user with aggrigation pipeline and all
 
-videos photo tweet , like dislike , assignment + mega project 
+videos photo tweet , like dislike , assignment + mega project
 
-4th video -- Data modelling 
+4th video -- Data modelling
 
-Data kya store karane vale hai ye important hai ? not tech stack 
-Moon modelar, eraser .io  -- data modeling
-moongose -- eligent dat modelig  for nodejs
-Prisma -- for sql data modeling 
+Data kya store karane vale hai ye important hai ? not tech stack
+Moon modelar, eraser .io -- data modeling
+moongose -- eligent dat modelig for nodejs
+Prisma -- for sql data modeling
 
-5th data modeling 
+5th data modeling
 
-Ecommerce & hospital managemant 
-Basic of done 
+Ecommerce & hospital managemant
+Basic of done
 
---------------------------------------------------
+---
 
-Here we make backend app for the professional backend project 
-6th  setup of professional backend  
+Here we make backend app for the professional backend project
+6th setup of professional backend
+ 
+7th -- connect db
 
-7th -- connect db 
+8th -- custom api response and error handling
 
-8th -- custom api response and error handling 
+9th -- model with hooks and jwt
 
-9th  -- model with hooks and jwt 
-
-10th -- file upload with third party or same  server  multer 
+10th -- file upload with third party or same server multer
 
 11th -- multer file upload
 
 12th -- crash http theory
 
-13th -- router and controllers 
+13th -- router and controllers
 
 14th -- register user controller with postman
 
-15th -- access refresh token and cookies in backend 
+15th -- access refresh token and cookies in backend
 
-16th -- access token and refresh token 
+16th -- access token and refresh token
 
-17th writng updated controllers for users 
+17th -- writng updated controllers for users
 
-18th about subscription schema model 
+18th -- about subscription schema model
 
-19th agregation pipelines in mongodb 
+19th -- agregation pipelines in mongodb
 
-20th -- sub pipelines and routes 
+20th -- sub pipelines and routes
+
+21th -- watch history aggregation pipeline
+
+22nd -- now you are prove so soleve next solve the your own routes
+
+
+now you are redy as backend engineer 90 to 95%
+CRUD operations
+database 
+pipelines joins lookups  kk
+
+now your work is make your own logic and models controllers and all push videos in cloudanary 
+
+23rd -- mongodb models for like plalist and tweet 
