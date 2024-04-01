@@ -85,3 +85,9 @@ Here we make backend app for the professional backend project
 16th -- access token and refresh token 
 
 17th writng updated controllers for users 
+
+18th about subscription schema model 
+
+19th agregation pipelines in mongodb 
+
+20th -- sub pipelines and routes 
